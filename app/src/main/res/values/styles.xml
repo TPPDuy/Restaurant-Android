@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="IMSTheme">
+        <item name="android:textColorPrimary">@color/colorTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextColorSecondary</item>
+        <item name="android:textSize">@dimen/size_text_extra_medium</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_small</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/colorPrimaryDark
+        </item>
+    </style>
+
+    <style name="ButtonTheme" parent="IMSTheme.Button">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_icon_x6</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_text_semi_large</item>
+        <item name="android:fontFamily">@font/gilroy_semi_bold</item>
+    </style>
+
+    <style name="BasePopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/size_text_medium</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <dimen name="size_text_extra_medium_small">13sp</dimen>
+
+</resources>

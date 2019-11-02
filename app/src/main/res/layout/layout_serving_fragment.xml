@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_medium"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textSize="@dimen/size_text_extra_medium"
+                android:textColor="@color/colorTextLight"
+                android:text="Ngày 13/05/2019"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:textSize="@dimen/size_text_extra_large"
+                android:textColor="@android:color/black"
+                android:text="Đang phục vụ"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btn_add_table_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin"
+            android:background="@drawable/round_corner_button_gradient_background">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_add"
+                    android:layout_width="@dimen/size_icon_x2"
+                    android:layout_height="@dimen/size_icon_x2"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/round_corner_button_white_background"
+                    app:srcCompat="@drawable/ic_add_orange" />
+                <com.tuyenmonkey.mkloader.MKLoader
+                    android:id="@+id/ic_loader"
+                    android:layout_width="@dimen/size_icon_x2"
+                    android:layout_height="@dimen/size_icon_x2"
+                    android:visibility="gone"
+                    app:mk_color="@android:color/white"
+                    app:mk_type="FishSpinner"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingEnd="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:textSize="@dimen/size_text_semi_large"
+                android:textColor="@android:color/white"
+                android:text="Thêm bàn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/layout_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/size_icon_x5"
+            android:paddingEnd="@dimen/size_icon_x5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/size_icon_x9"
+                android:layout_height="@dimen/size_icon_x9"
+                app:srcCompat="@drawable/ic_empty_serving"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textSize="@dimen/size_text_large"
+                android:textColor="@color/colorTextLight"
+                android:text="Chưa có bàn nào đang được phục vụ"/>
+            <LinearLayout
+                android:id="@+id/btn_add_table_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/margin"
+                android:background="@drawable/round_corner_button_gradient_background">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_icon_x3"
+                    android:layout_height="@dimen/size_icon_x3"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/round_corner_button_white_background"
+                    app:srcCompat="@drawable/ic_add_orange" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin"
+                    android:layout_marginStart="@dimen/margin"
+                    android:fontFamily="@font/gilroy_semi_bold"
+                    android:textSize="@dimen/size_text_large"
+                    android:textColor="@android:color/white"
+                    android:text="Thêm bàn ngay"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/margin">
+        </androidx.recyclerview.widget.RecyclerView>
+    </FrameLayout>
+</LinearLayout>

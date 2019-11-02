@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryBackground">
+
+    <RelativeLayout
+        android:id="@+id/fl_navigation_buttons_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin"
+        android:paddingBottom="@dimen/margin"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_semi_bold"
+            android:textSize="@dimen/size_text_large"
+            android:textColor="@android:color/black"
+            android:text="Chọn ngày"
+            android:padding="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"/>
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:paddingBottom="@dimen/space_1x"
+            android:paddingStart="@dimen/space_1x"
+            android:paddingEnd="20dp"
+            android:paddingTop="@dimen/space_1x"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close_orange" />
+    </RelativeLayout>
+        <com.applikeysolutions.cosmocalendar.view.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:firstDayOfTheWeek="monday"
+            app:dayTextColor="@color/colorTextColorSecondary"
+            app:calendarBackgroundColor="@android:color/white"
+            app:selectedDayBackgroundColor="@color/colorPrimaryBackground"
+            app:selectedDayBackgroundStartColor="@color/colorPrimaryDark"
+            app:selectedDayBackgroundEndColor="@color/colorPrimaryDark"
+            app:currentDayTextColor="@color/colorPrimary"
+            app:weekendDayTextColor="@color/colorPrimary"
+            app:selectedDayTextColor="@android:color/black"
+            app:orientation="vertical"
+            app:monthTextColor="@android:color/black"
+            app:selectionBarMonthTextColor="@color/colorPrimary"
+            app:weekDayTitleTextColor="@android:color/black"
+            app:currentDayIconRes="@drawable/ic_today" />
+
+        <TextView
+            android:id="@+id/btn_confirm_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/medium_round_corner_gradient_background"
+            android:padding="@dimen/margin_medium"
+            android:fontFamily="@font/gilroy_semi_bold"
+            android:textSize="@dimen/size_text_semi_large"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:text="Xác nhận"/>
+
+
+</LinearLayout>

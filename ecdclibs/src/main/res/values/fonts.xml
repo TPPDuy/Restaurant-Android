@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_font_bold">bold.otf</string>
+    <string name="str_font_regular">regular.otf</string>
+    <string name="str_font_italic">italic.otf</string>
+</resources>

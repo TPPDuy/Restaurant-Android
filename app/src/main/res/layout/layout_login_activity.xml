@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_extra_large"
+                android:background="@drawable/medium_round_corner_white_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_text_extra_medium"
+                    android:src="@drawable/ic_user_name" />
+
+
+                    <EditText
+                        android:id="@+id/edit_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_icon_x6"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:paddingEnd="@dimen/size_text_extra_medium"
+                        android:paddingStart="0dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|center"
+                        android:hint="Tên đăng nhập"
+                        android:fontFamily="@font/gilroy_regular"
+                        android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:background="@drawable/medium_round_corner_white_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_text_extra_medium"
+                    android:src="@drawable/ic_password" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@android:color/transparent"
+                    app:passwordToggleEnabled="true"
+                    app:errorEnabled="false"
+                    app:hintEnabled="false"
+                    android:stateListAnimator="@null">
+                    <EditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:paddingEnd="@dimen/size_text_extra_medium"
+                        android:paddingStart="0dp"
+                        android:layout_height="@dimen/size_icon_x6"
+                        android:layout_gravity="center"
+                        android:gravity="start|center"
+                        android:background="@android:color/transparent"
+                        android:hint="Mật khẩu"
+                        android:fontFamily="@font/gilroy_regular"
+                        android:textCursorDrawable="@null"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@id/button"
+                style="@style/ButtonTheme"
+                android:text="Đăng nhập"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:enabled="false"
+                android:background="@drawable/medium_round_corner_gradient_background"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:text="Tài khoản"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_text_extra_large"
+        android:padding="@dimen/margin_medium"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_avatar"
+            android:layout_width="@dimen/size_icon_x8"
+            android:layout_height="@dimen/size_icon_x8"
+            app:srcCompat="@drawable/ic_avatar_holder"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_medium">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_semi_bold"
+                android:textSize="@dimen/size_text_large"
+                android:textColor="@color/colorPrimary"
+                android:text="Admin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:fontFamily="@font/gilroy_regular"
+                android:textSize="@dimen/size_text_medium"
+                android:textColor="@color/colorTextBright"
+                android:text="Thông tin cá nhân"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/medium_round_corner_white_background"
+        android:padding="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:fontFamily="@font/gilroy_semi_bold"
+        android:textSize="@dimen/size_text_large"
+        android:textColor="@color/colorPrimary"
+        android:text="Đăng xuất"
+        android:gravity="center"/>
+</LinearLayout>

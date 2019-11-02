@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">ERestaurant</string>
+    //tab name
+    <string name="name_tab_1">Đang phục vụ</string>
+    <string name="name_tab_2">Sơ đồ</string>
+    <string name="name_tab_3">Thống kê</string>
+    <string name="name_tab_4">Thông báo</string>
+    <string name="name_tab_5">Tài khoản</string>
+</resources>

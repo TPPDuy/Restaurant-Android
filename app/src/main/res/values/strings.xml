@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">ERestaurant</string>
+    //tab name
+    <string name="name_tab_1">Activity</string>
+    <string name="name_tab_2">Map</string>
+    <string name="name_tab_3">Statistic</string>
+    <string name="name_tab_4">Notification</string>
+    <string name="name_tab_5">Account</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f48629</color>
+    <color name="colorPrimaryDark">#f48629</color>
+    <color name="colorPrimaryLight">#ffa038</color>
+    <color name="colorSelectedTab">#fff7f0</color>
+    <color name="colorPrimaryBackground">#f0f2f5</color>
+    <color name="colorLightBackground">#f1f3f8</color>
+    <color name="colorTextLight">#9b9b9b</color>
+    <color name="colorTextPrimary">#4a4a4a</color>
+    <color name="colorTextGreenLight">#417505</color>
+    <color name="colorJade">#2ebd9d</color>
+    <color name="colorTextBright">#7d7d7d</color>
+</resources>
